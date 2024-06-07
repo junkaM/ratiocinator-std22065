@@ -1,12 +1,13 @@
 package com.hei.ratiocinator.affirmation;
 
-
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@AllArgsConstructor
 @Getter
-public sealed abstract class Affirmation permits
-        Verite, Mensonge {
-        protected final String texte;
+public final class Affirmation extends Fait {
+
+    private final String status;
+    public Affirmation(String texte, String status) {
+        super(texte);
+        this.status = status;
+    }
 }

@@ -1,10 +1,13 @@
 package com.hei.ratiocinator.affirmation;
 
-public final class Verite extends Affirmation {
-    private Boolean Status = true;
+import lombok.Getter;
 
-    public Verite(String texte, Boolean status) {
+@Getter
+public final class Verite extends Fait {
+    private String status = "Faux";
+
+    public Verite(String texte) {
         super(texte);
-        Status = status;
+        this.status = status;
     }
 }

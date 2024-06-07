@@ -1,9 +1,12 @@
 package com.hei.ratiocinator.affirmation;
 
-public final class Mensonge extends Affirmation {
-    private Boolean status = false;
+import lombok.Getter;
 
-    public Mensonge(String texte, Boolean status) {
+@Getter
+public final class Mensonge extends Fait {
+    private String status = "Faux";
+
+    public Mensonge(String texte) {
         super(texte);
         this.status = status;
     }
