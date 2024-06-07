@@ -9,5 +9,4 @@ import lombok.Getter;
 public sealed abstract class Affirmation permits
         Verite, Mensonge {
         protected final String texte;
-        public abstract Boolean calculerLaVerite(Affirmation affirmation);
 }

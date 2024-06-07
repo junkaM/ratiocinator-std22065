@@ -7,9 +7,4 @@ public final class Mensonge extends Affirmation {
         super(texte);
         this.status = status;
     }
-
-    @Override
-    public Boolean calculerLaVerite(Affirmation affirmation) {
-        return null;
-    }
 }

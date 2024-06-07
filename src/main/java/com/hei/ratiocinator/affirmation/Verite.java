@@ -7,9 +7,4 @@ public final class Verite extends Affirmation {
         super(texte);
         Status = status;
     }
-
-    @Override
-    public Boolean calculerLaVerite(Affirmation affirmation) {
-        return null;
-    }
 }
